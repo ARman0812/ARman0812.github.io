@@ -1,1 +1,245 @@
-hi
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CV Muhammad Abdullah</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364, #0f2027);
+      background-size: 400% 400%;
+      animation: bgAnimation 15s ease infinite;
+      color: white;
+      line-height: 1.6;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 5rem 1rem 3rem;
+      animation: fadeIn 2s ease-in;
+    }
+
+    .glow {
+      font-size: 2.8rem;
+      color: #00ffc3;
+      text-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3, 0 0 30px #00ffc3;
+    }
+
+    .name {
+      color: #fff;
+      animation: colorShift 5s infinite;
+    }
+
+    .typewriter {
+      font-size: 1.3rem;
+      color: #ccc;
+      margin: 1rem auto;
+      border-right: 2px solid #00ffc3;
+      white-space: nowrap;
+      overflow: hidden;
+      animation: typing 4s steps(40, end), blink 1s step-end infinite;
+      width: fit-content;
+    }
+
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #00ffc3;
+      box-shadow: 0 0 20px #00ffc3;
+      margin-top: 2rem;
+      transition: transform 0.4s ease;
+    }
+
+    .profile-pic:hover {
+      transform: scale(1.1);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #00ffc3;
+      margin: 2rem auto;
+      max-width: 800px;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #00ffc3;
+      transform: translateY(30px);
+      opacity: 0;
+      transition: 0.8s ease-out;
+    }
+
+    .card.show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+    }
+
+    .skill-bar {
+      margin: 1rem 0;
+    }
+
+    .skill-bar span {
+      display: block;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .bar {
+      background: #00ffc3;
+      height: 10px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #00ffc3;
+    }
+
+    .html { width: 90%; }
+    .css { width: 85%; }
+    .js { width: 75%; }
+    .python { width: 70%; }
+
+    .contact {
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(to right, #000428, #004e92);
+      box-shadow: 0 0 10px #00ffc3;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+
+    .floating-icons {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .floating-icons a {
+      background: #00ffc3;
+      padding: 10px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px #00ffc3;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    @keyframes colorShift {
+      0%, 100% { color: #00ffc3; }
+      50% { color: #ff007a; }
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bgAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1 class="glow">Hi, I'm <span class="name">MUHAMMAD ABDULLAH</span></h1>
+    <p class="typewriter">Web Developer | Programmer | Designer</p>
+    <img src="IMG-20250424-WA0181.jpg" alt="Your Profile" class="profile-pic">
+  </div>
+
+  <section class="card">
+    <h2>About Me</h2>
+    <p>Creative developer with a passion for clean code, strong UI/UX, and performance-driven websites.</p>
+  </section>
+
+  <section class="card">
+    <h2>Education</h2>
+    <ul>
+      <li>BS Computer Science - SIR SYED CASE University (2024 - 2028)</li>
+      <li>FSC (PRE-ENGINEERING) - HITEC School AND COLLEGE (2021 - 2023)</li>
+      <li>MATRIC - HITEC SCHOOL AND COLLEGE (2019 - 2021)</li>
+    </ul>
+  </section>
+
+  <section class="card">
+    <h2>Skills</h2>
+    <div class="skill-bar"><span>HTML</span><div class="bar html"></div></div>
+    <div class="skill-bar"><span>CSS</span><div class="bar css"></div></div>
+    <div class="skill-bar"><span>JavaScript</span><div class="bar js"></div></div>
+    <div class="skill-bar"><span>Python</span><div class="bar python"></div></div>
+  </section>
+
+  <section class="card">
+    <h2>Projects</h2>
+    <p>- Portfolio Website</p>
+    <p>- Library Management System</p>
+    <p>- Weather Forecast App</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: abdullahhere0812@gmail.com</p>
+    <p>Phone: +92 333 2209966</p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourname" target="_blank" style="color:#00ffc3;">linkedin.com/in/yourname</a></p>
+    <p>GitHub: <a href="https://github.com/ARman0812" target="_blank" style="color:#00ffc3;">github.com/ARman0812</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MUHAMMAD ABDULLAH -- A PROFESSIONAL AI USER</p>
+  </footer>
+
+  <div class="floating-icons">
+    <a href="mailto:abdullahhere0812@gmail.com">✉️</a>
+    <a href="tel:+923332209966">📞</a>
+    <a href="https://github.com/ARman0812" target="_blank">GH</a>
+  </div>
+
+  <script>
+    document.addEventListener('copy' , function(event) {
+      event.clipboardData.setData('text/plain' , 'Created By : Muhammad Abdullah');
+      event.preventDefault();
+    });
+
+    const cards = document.querySelectorAll('.card');
+    const revealOnScroll = () => {
+      const trigger = window.innerHeight * 0.85;
+      cards.forEach(card => {
+        const top = card.getBoundingClientRect().top;
+        if (top < trigger) {
+          card.classList.add('show');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    window.addEventListener('load', revealOnScroll);
+  </script>
+</body>
+</html>
