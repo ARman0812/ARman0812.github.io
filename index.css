@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f2027;
+  color: white;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: radial-gradient(circle at top, #1c1c1c, #0f2027);
+  animation: fadeIn 2s ease-in;
+}
+
+.glow {
+  font-size: 2.5rem;
+  color: #00ffc3;
+  text-shadow: 0 0 10px #00ffc3, 0 0 20px #00ffc3, 0 0 30px #00ffc3;
+}
+
+.name {
+  color: #fff;
+  animation: colorShift 5s infinite;
+}
+
+.typewriter {
+  font-size: 1.2rem;
+  color: #ccc;
+  width: fit-content;
+  margin: 1rem auto;
+  overflow: hidden;
+  border-right: 2px solid #00ffc3;
+  white-space: nowrap;
+  animation: typing 4s steps(40, end), blink 1s step-end infinite;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 4px solid #00ffc3;
+  box-shadow: 0 0 20px #00ffc3;
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #00ffc3;
+  margin: 2rem auto;
+  max-width: 800px;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00ffc3;
+  transition: transform 0.4s;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+.skill-bar {
+  margin: 1rem 0;
+}
+.skill-bar span {
+  display: block;
+}
+.bar {
+  background: #00ffc3;
+  height: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px #00ffc3;
+}
+.html { width: 90%; }
+.css { width: 85%; }
+.js { width: 75%; }
+.python { width: 70%; }
+
+.contact {
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to right, #000428, #004e92);
+  box-shadow: 0 0 10px #00ffc3;
+  margin: 2rem auto;
+  max-width: 800px;
+  border-radius: 10px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@keyframes colorShift {
+  0% { color: #00ffc3; }
+  50% { color: #ff007a; }
+  100% { color: #00ffc3; }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
